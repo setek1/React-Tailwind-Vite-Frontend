@@ -5,7 +5,7 @@ const TodoItem = ({ todo, removeTodo, updateTodo }) => {
     // const{id, title, completed}=todo; Con esto nos podemos ahorrar el escribir todo.id , todo,tittle, todo.completed y solo escribimos la palabras solas como id, title, completed y lo tomara en cuenta igual
 
     return (
-        <article className="flex gap-4 border-b border-b-gray-400  ">
+        <article className="flex gap-4 border-b border-b-gray-400  dark:bg-gray-800 ">
             {/* <button className="inline-block h-5 w-5 flex-none rounded-full border-2">
                 
             </button> */}
@@ -21,7 +21,7 @@ const TodoItem = ({ todo, removeTodo, updateTodo }) => {
                 {todo.completed && <IconCheck />}
             </button>
             <p
-                className={`grow text-gray-600 ${
+                className={`grow text-gray-600 dark:text-gray-400 ${
                     todo.completed && "line-through"
                 }`}
             >
